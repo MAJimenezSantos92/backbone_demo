@@ -1,4 +1,4 @@
-var Libro = Backbone.Model.extend({
+let Libro = Backbone.Model.extend({
 	validate: function(atributos){
 		if (!atributos.titulo){
 			return "Debe tener titulo";

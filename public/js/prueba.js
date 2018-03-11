@@ -1,5 +1,5 @@
 
-var primerLibro = new Libro({ 
+let primerLibro = new Libro({ 
 	titulo: 'la odisea', 
 	autor: 'homero', 
 	categoria:'literatura'
@@ -10,11 +10,11 @@ console.log(primerLibro.get('titulo'));
 primerLibro.set('autor','pikachu');
 console.log("Autor del libro 1: "+primerLibro.get('autor'));
 
-var tercerLibro = new Libro({titulo: 'Lazarillo'});
+let tercerLibro = new Libro({titulo: 'Lazarillo'});
 console.log(tercerLibro.toJSON());
 
 
-var cuartoLibro = new Libro({
+let cuartoLibro = new Libro({
 	titulo: 'la metamorfosis', 
 	autor: 'kafka', 
 });
@@ -24,13 +24,13 @@ cuartoLibro.set({
 });
 
 
-var libroPrueba = new Libro({ id: '1',});
+let libroPrueba = new Libro({ id: '1',});
 libroPrueba.fetch();
 libroPrueba.toJSON();
 console.log(libroPrueba.toJSON());
 
 
-var libroPrueba2 = new Libro({ 
+let libroPrueba2 = new Libro({ 
 titulo: 'pepe',
 autor: 'pipi', 
 categoria: 'Literatura'
